@@ -1,5 +1,7 @@
 Noob attempt at twitter bots.
 
+twitter handle: @ramblingcogs
+
 code inspired by tutorials & packages here: 
 
 https://hackernoon.com/build-a-simple-twitter-bot-with-node-js-in-just-38-lines-of-code-ed92db9eb078
@@ -17,6 +19,7 @@ module.exports = {
   access_token_key: '',
   access_token_secret: ''
 }
+
 
 
 
