@@ -25,6 +25,10 @@ https://www.npmjs.com/package/twit
 [tweet.js]
 - creates a tweet
 
+[tweetimg.js]
+- posts an image [GIFS/VIDEOS not supported]
+- Sample image: testimg4_bw.jpg
+
 -------- EXTRA NOTES --------
 
 “config.js” file is also needed
