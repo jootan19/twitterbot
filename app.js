@@ -5,7 +5,7 @@ var T = new Twitter(config);
 // Set up your search parameters
 var params = {
   q: '#fmri',
-  count: 10,
+  count: 1,
   result_type: 'recent',
   lang: 'en'
 }
