@@ -2,3 +2,5 @@ config.js
 .Rhistory
 node_modules/*
 images/displaypict/*
+log.txt
+textlog.txt

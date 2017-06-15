@@ -10,7 +10,7 @@ var tweetCount = 0;
 
 // Set up your search parameters
 var params = {
-  q: '#neuroscience',
+  q: '#neuroscience' + 'attention',
   count: 10,
   result_type: 'recent',
   since_id: sinceID,
@@ -44,21 +44,23 @@ var textlog = fs.createWriteStream('textlog.txt', {
       
       var tweet =  String(data.statuses[i].text);
       var rtchecktext = tweet.substring(0,2);
-      
       if (rtchecktext !== 'RT'){
-        tweetCount++; 
-        var logtext = '\n\n---'+ String(tweetCount) +'\nTweet: ' + tweet +   
+        tweetCount++;
+        textlog.write(tweet + '\n');
+      }
+      var logtext = '\n\n---'+ String(i) +'\nTweet: ' + tweet +   
         '\nScreenName: ' + data.statuses[i].user.screen_name +
         '\nCreated at: ' + data.statuses[i].created_at +
         '\nID: ' + data.statuses[i].id_str;
-        console.log(logtext);
-        logger.write(logtext); 
-        textlog.write(tweet + '\n');
-      }
+      console.log(logtext);
+      logger.write(logtext);
     }
-    
+    logger.write('Unique Tweets:' + tweetCount + '\n-------------\n');
     console.log('Unique Tweets:' + tweetCount);
   } else {
     console.log(err);
   }
 });
+
+logger.end();
+textlog.end();

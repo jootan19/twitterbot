@@ -16,6 +16,11 @@ https://www.npmjs.com/package/twit
 [app.js]
 - searches for most 10 most recent entries of a hashtag and favourites tweets.
 
+[crawler.js]
+-crawls through 100 most recent twitter statuses starting from status ID stored in ’sinceID’ and finds unique tweets. [i.e.: RT’s ignore]. 
+- Unique tweets are saved in textlog.txt. 
+- All tweets and some metadata crawled from Twitter stored in log.txt
+
 [retweet.js]
 - searches for a hashtag, and retweets
 
