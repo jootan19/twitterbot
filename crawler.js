@@ -11,7 +11,7 @@ var tweetCount = 0;
 // Set up your search parameters
 var params = {
   q: '#neuroscience' + 'attention',
-  count: 10,
+  count: 100,
   result_type: 'recent',
   since_id: sinceID,
   lang: 'en'
