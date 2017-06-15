@@ -32,7 +32,7 @@ T.get('search/tweets', params, function(err, data) {
   
   fs.writeFile("sinceID.log", data.search_metadata.max_id, function(err) {
     if(err) {return console.log(err);}
-    console.log("since ID log was saved!");
+    console.log("sinceID saved!");
   }); 
   
   // Display search meta data
