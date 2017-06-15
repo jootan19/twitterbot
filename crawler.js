@@ -1,3 +1,13 @@
+// timestamps
+var date = new Date().getTimezoneOffset();
+date = "" + new Date();
+var auxCopia=date.split(" ");
+
+date=auxCopia.slice(1,5).
+             join("").
+            replace(":","").
+            replace(":","");
+
 // fs
 var fs = require('fs');
 var sinceID = fs.readFileSync('sinceID.log', 'UTF-8'); // retrieve since_id for search params
@@ -29,7 +39,8 @@ T.get('search/tweets', params, function(err, data) {
   console.log(data.search_metadata);
   
   // Open log file
-  var logger = fs.createWriteStream('log.txt', {
+  var logfname = 'logfiles/log_' + date + '.txt'; 
+  var logger = fs.createWriteStream(logfname, {
     flags: 'a'
   });
   
@@ -37,7 +48,8 @@ T.get('search/tweets', params, function(err, data) {
   logger.write('Search query:' + data.search_metadata.query + '\n');
   
   // Open log file for unique tweets
-  var textlog = fs.createWriteStream('textlog.txt', {
+  var textlogfname = 'logfiles/textlog_' + date + '.txt'; 
+  var textlog = fs.createWriteStream(textlogfname, {
     flags: 'a'
   });
   
