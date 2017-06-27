@@ -15,7 +15,7 @@ T.post('media/upload', {media: img}, function(error, media, response) {
     var status = {
       status: 'Testing image posting. Guess the image!',
       media_ids: media.media_id_string // Pass the media id string
-    }
+    };
 
     T.post('statuses/update', status, function(error, tweet, response) {
       if (!error) {

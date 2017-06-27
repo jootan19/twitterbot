@@ -20,10 +20,10 @@ var tweetCount = 0;
 
 // Set up search parameters
 var params = {
-  q: '#trump',
+  q: '#ASSC21',
   count: 100,
   result_type: 'recent',
-  since_id: sinceID,
+  //since_id: sinceID,
   lang: 'en'
 };
 
