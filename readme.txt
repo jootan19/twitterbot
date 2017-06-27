@@ -2,7 +2,7 @@
 
 first attempt at twitter bots. #dontexpecttoomuch 
 
-exists at twitter handle: @ramblingcogs
+exists at twitter handle: @VisionSciBot
 
 not hosted online [yet?]
 
