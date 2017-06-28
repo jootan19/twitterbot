@@ -1,8 +1,12 @@
 [12jun2017 - ramblingcogsbot created] 
 
-first attempt at twitter bots. #dontexpecttoomuch 
+[UPDATE 29 JUN 2017]
+@ramblingcogsbot is no longer online..this repo is no longer being updated either….
 
-exists at twitter handle: @VisionSciBot
+head to @VisionSciBots for a working twitter bot
+——————————————
+
+first attempt at twitter bots. #dontexpecttoomuch 
 
 not hosted online [yet?]
 
