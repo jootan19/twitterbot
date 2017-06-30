@@ -3,7 +3,10 @@
 [UPDATE 29 JUN 2017]
 @ramblingcogsbot is no longer online..this repo is no longer being updated either….
 
-head to @VisionSciBots for a working twitter bot
+Head to @VisionSciBots or @RamblingCogs for working twitter bots
+
+
+
 ——————————————
 
 first attempt at twitter bots. #dontexpecttoomuch 
